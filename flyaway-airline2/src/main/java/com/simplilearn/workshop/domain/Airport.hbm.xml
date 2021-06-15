@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.simplilearn.workshop.domain.Airport" table="airports">
+		<!-- primary key column in Users table -->
+		<id name="id" type="int">
+			<column name="id" />
+			<generator class="increment" />
+		</id>
+		<property name="code" type="java.lang.String">
+			<column name="code" />
+		</property>
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>		
+		<property name="street" type="java.lang.String">
+			<column name="street" />
+		</property>
+		<property name="city" type="java.lang.String">
+			<column name="city" />
+		</property>
+		<property name="state" type="java.lang.String">
+			<column name="state" />
+		</property>
+		<property name="country" type="java.lang.String">
+			<column name="country" />
+		</property>		
+		<property name="zipCode" type="java.lang.String">
+			<column name="zipcode" />
+		</property>				
+	</class>
+
+</hibernate-mapping>

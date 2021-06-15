@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="com.simplilearn.workshop.domain.Payment" table="payments">
+		<!-- primary key column in Users table -->
+		<id name="id" type="int">
+			<column name="id" />
+			<generator class="increment" />
+		</id>
+		<property name="billDate" type="date">
+			<column name="bill_date" />
+		</property>
+		<property name="firstName" type="java.lang.String">
+			<column name="first_name" />
+		</property>
+		<property name="middleName" type="java.lang.String">
+			<column name="middle_name" />
+		</property>
+		<property name="lastName" type="java.lang.String">
+			<column name="last_name" />
+		</property>
+		<property name="cardNumber" type="java.lang.String">
+			<column name="card_number" />
+		</property>
+		<property name="expirationDate" type="java.lang.String">
+			<column name="expirate_date" />
+		</property>
+		<property name="cvcCode" type="java.lang.String">
+			<column name="cvc_code" />
+		</property>
+		<property name="street" type="java.lang.String">
+			<column name="street" />
+		</property>
+		<property name="city" type="java.lang.String">
+			<column name="city" />
+		</property>
+		<property name="state" type="java.lang.String">
+			<column name="state" />
+		</property>
+		<property name="country" type="java.lang.String">
+			<column name="country" />
+		</property>	
+		<property name="zipCode" type="java.lang.String">
+			<column name="zipcode" />
+		</property>											
+		<property name="amount" type="float">
+			<column name="amount" />
+		</property>
+		<property name="bookingNumber" type="java.lang.String">
+			<column name="booking_number" />
+		</property>					
+	</class>
+
+</hibernate-mapping>
